@@ -1,0 +1,20 @@
+# 爱奇艺广告/统计/社区相关
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com
+DOMAIN-SUFFIX,pglstatp-toutiao.com
+DOMAIN-SUFFIX,pglstatp-toutiao1.com
+DOMAIN-SUFFIX,tpa-data.iqiyi.com
+DOMAIN-SUFFIX,sns-paopao.iqiyi.com
+DOMAIN-SUFFIX,comment-card.iqiyi.com
+DOMAIN-SUFFIX,amsg.qy.net
+DOMAIN-SUFFIX,bmsg.qy.net
+DOMAIN-SUFFIX,livemsg.qy.net
+DOMAIN-SUFFIX,qchannel01.cn
+DOMAIN-SUFFIX,zztfly.com
+DOMAIN-SUFFIX,t7z.cupid.iqiyi.com
+DOMAIN-SUFFIX,tyaqy.m.cn.miaozhen.com
+DOMAIN-SUFFIX,sdk.e.qq.com
+DOMAIN-SUFFIX,doh.iqiyi.com
+DOMAIN-SUFFIX,emsg.qy.net
+DOMAIN-SUFFIX,qmsg.qy.net
+DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao1.com
