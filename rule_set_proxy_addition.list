@@ -14,3 +14,6 @@ DOMAIN-SUFFIX,intercom.io
 
 # > AltServer
 DOMAIN-SUFFIX,gsa.apple.com
+
+# > github
+DOMAIN-SUFFIX,githubusercontent.com
