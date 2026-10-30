@@ -37,6 +37,9 @@ DOMAIN-SUFFIX,appcfg.v.qq.com
 DOMAIN,info4.video.qq.com
 DOMAIN,info6.video.qq.com
 DOMAIN,ios.video.mpush.qq.com
+DOMAIN-SUFFIX,rdelivery.qq.com
+DOMAIN-SUFFIX,ugd.gtimg.com
+DOMAIN,tips.video.qq.com
 
 # 腾讯追踪、统计、遥测相关
 DOMAIN,dp3.qq.com
@@ -50,6 +53,24 @@ DOMAIN-SUFFIX,rqd.qq.com
 DOMAIN-SUFFIX,snowflake.qq.com
 DOMAIN,rmonitor.qq.com
 DOMAIN,galileotelemetry.tencent.com
+DOMAIN-SUFFIX,trace.inlong.qq.com
+DOMAIN-SUFFIX,tdm.qq.com
+DOMAIN-SUFFIX,tam.cdn-go.cn
+DOMAIN-SUFFIX,td.cdn-go.cn
+DOMAIN,config.ab.qq.com
+DOMAIN,content.rconfig.qq.com
+
+# 第三方聚合广告与变现 SDK
+DOMAIN-SUFFIX,qiezibenpao.com
+DOMAIN-SUFFIX,xinqiucc.com
+DOMAIN-SUFFIX,kuiniuca.com
+
+# 其他应用追踪与监控
+DOMAIN,spider-tracker.xiaohongshu.com
+DOMAIN,apm-native.xiaohongshu.com
+DOMAIN,clientlogdep.music.163.com
+DOMAIN,clientlogsf.music.163.com
+DOMAIN,collect.futunn.com
 
 # 苹果广告
 DOMAIN,api-adservices.apple.com
