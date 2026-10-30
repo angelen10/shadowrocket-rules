@@ -31,6 +31,7 @@ DOMAIN-SUFFIX,acs.m.taobao.com
 # 腾讯广告相关
 DOMAIN,sdkquic.e.qq.com
 DOMAIN,pgdt.gtimg.cn
+DOMAIN-SUFFIX,gdtimg.com
 DOMAIN-SUFFIX,l.qq.com
 DOMAIN-SUFFIX,gdt.qq.com
 DOMAIN-SUFFIX,appcfg.v.qq.com
@@ -59,6 +60,10 @@ DOMAIN-SUFFIX,tam.cdn-go.cn
 DOMAIN-SUFFIX,td.cdn-go.cn
 DOMAIN,config.ab.qq.com
 DOMAIN,content.rconfig.qq.com
+
+# 腾讯 HTTPDNS 服务（防止 App 绕过域名规则通过 IP 获取广告资源）
+IP-CIDR,119.29.29.0/24,no-resolve
+IP-CIDR,182.254.116.0/24,no-resolve
 
 # 第三方聚合广告与变现 SDK
 DOMAIN-SUFFIX,qiezibenpao.com
