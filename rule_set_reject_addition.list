@@ -41,6 +41,7 @@ DOMAIN,ios.video.mpush.qq.com
 DOMAIN-SUFFIX,rdelivery.qq.com
 DOMAIN-SUFFIX,ugd.gtimg.com
 DOMAIN,tips.video.qq.com
+DOMAIN-SUFFIX,vmind.qqvideo.tc.qq.com
 
 # 腾讯追踪、统计、遥测相关
 DOMAIN,dp3.qq.com
