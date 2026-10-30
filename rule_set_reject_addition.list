@@ -27,3 +27,15 @@ DOMAIN-SUFFIX,scs-x.iqiyi.com
 DOMAIN-SUFFIX,static-s.iqiyi.com
 DOMAIN-SUFFIX,tnc3-alisc1.zijieapi.com
 DOMAIN-SUFFIX,acs.m.taobao.com
+
+# 腾讯广告候选
+DOMAIN,c2.l.qq.com
+DOMAIN,p2.l.qq.com
+DOMAIN,livep2.l.qq.com
+DOMAIN,sdkquic.e.qq.com
+
+# 腾讯追踪、统计、遥测候选
+DOMAIN,h.trace.qq.com
+DOMAIN,oth.str.mdt.qq.com
+DOMAIN,rmonitor.qq.com
+DOMAIN,galileotelemetry.tencent.com
