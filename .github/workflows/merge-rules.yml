@@ -1,0 +1,42 @@
+name: Generate merged Shadowrocket config
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "sr_top500_banlist_ad.conf"
+      - "rule_set_*.list"
+      - "scripts/merge_rules.py"
+      - ".github/workflows/merge-rules.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: merge-shadowrocket-rules
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate config
+        run: python scripts/merge_rules.py
+      - name: Commit generated config
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sr_top500_banlist_ad_merged.conf
+          if git diff --cached --quiet; then
+            echo "Generated config is unchanged"
+            exit 0
+          fi
+          git commit -m "chore: regenerate merged Shadowrocket config"
+          git push origin HEAD:main
