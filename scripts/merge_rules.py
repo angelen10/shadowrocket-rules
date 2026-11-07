@@ -17,7 +17,7 @@ def expand_rules(path: Path, policy: str) -> list[str]:
             result.append(line)
             continue
         fields = [field.strip() for field in rule.split(",")]
-        supported = {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "IP-CIDR", "IP-CIDR6", "USER-AGENT"}
+        supported = {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "DOMAIN-WILDCARD", "IP-CIDR", "IP-CIDR6", "USER-AGENT"}
         if fields[0] not in supported or len(fields) not in (2, 3) or not fields[1]:
             raise ValueError(f"{path.name}:{number}: unsupported rule: {rule}")
         if len(fields) == 3 and not (

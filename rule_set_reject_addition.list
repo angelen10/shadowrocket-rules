@@ -81,3 +81,10 @@ DOMAIN,collect.futunn.com
 # 苹果广告
 DOMAIN,api-adservices.apple.com
 
+# B站 PCDN。第三方节点带宽不稳，视频会卡。只拒绝分发域名，不影响正片域名。
+DOMAIN-WILDCARD,*pcdn*.biliapi.net
+DOMAIN-SUFFIX,mcdn.bilivideo.cn
+DOMAIN-SUFFIX,mcdn.bilivideo.com
+DOMAIN-SUFFIX,szbdyd.com
+DOMAIN-SUFFIX,mountaintoys.cn
+
