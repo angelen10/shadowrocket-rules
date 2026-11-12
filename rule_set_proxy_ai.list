@@ -21,6 +21,22 @@ DOMAIN-KEYWORD,openaicom
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 
+# > Apple Intelligence
+DOMAIN,apple-relay.apple.com
+DOMAIN,gspe1-ssl.ls.apple.com
+DOMAIN,mask.apple-dns.net
+DOMAIN,mask.icloud.com
+DOMAIN,mask-api.fe.apple-dns.net
+DOMAIN,mask-api.icloud.com
+DOMAIN,mask-h2.icloud.com
+DOMAIN,ropes.apple.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,cp4.cloudflare.com
+DOMAIN-SUFFIX,guzzoni.apple.com
+DOMAIN-SUFFIX,issuer.apple.com
+DOMAIN-SUFFIX,smoot.apple.com
+
 # > Claude
 DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN-SUFFIX,claude.ai
@@ -55,7 +71,7 @@ DOMAIN-SUFFIX,muse.ai
 DOMAIN-SUFFIX,ai.meta.com
 DOMAIN-SUFFIX,meta.com
 DOMAIN-SUFFIX,meta.ai
-DOMAIN-SUFFIX,fb.com​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+DOMAIN-SUFFIX,fb.com
 DOMAIN-SUFFIX,metaaivm.com
 DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,fbcdn.net
