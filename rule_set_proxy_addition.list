@@ -26,3 +26,19 @@ DOMAIN-SUFFIX,ipinfo.io
 DOMAIN-SUFFIX,ip.net.coffee
 DOMAIN,2026.ip138.com
 DOMAIN,my.ip.cn
+
+# > 代理商配置里主域名已代理、缺配套域名
+# Spotify CDN。spotify.com 已在源规则里。
+DOMAIN-SUFFIX,scdn.co
+# LINE 图片 CDN。line.me、line-apps.com、line-scdn.net 已在源规则里。
+DOMAIN-SUFFIX,line-cdn.net
+USER-AGENT,Line*
+# Dropbox 静态域名。dropbox.com、dropboxusercontent.com 已在源规则里。
+DOMAIN-SUFFIX,dropboxstatic.com
+# LinkedIn CDN。linkedin.com 已在源规则里。
+DOMAIN-SUFFIX,licdn.com
+# Cloudflare 质询和 CDN。不要整段代理 cloudflare.com。
+DOMAIN-SUFFIX,challenges.cloudflare.com
+DOMAIN-SUFFIX,cdn.cloudflare.net
+# 出口 DNS 泄漏检测。dnsleaktest.com 已在源规则里。
+DOMAIN-SUFFIX,dnsleak.com
