@@ -1,0 +1,44 @@
+name: Generate sr_merged.conf
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "sr_source.conf"
+      - "domain_set_*.list"
+      - "domain_keyword_proxy.list"
+      - "rule_set_*.list"
+      - "scripts/merge_sr.py"
+      - ".github/workflows/merge-sr.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: merge-sr-config
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate config
+        run: python scripts/merge_sr.py
+      - name: Commit generated config
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f sr_merged.conf
+          if git diff --cached --quiet; then
+            echo "Generated config is unchanged"
+            exit 0
+          fi
+          git commit -m "chore: regenerate sr_merged.conf"
+          git push origin HEAD:main
